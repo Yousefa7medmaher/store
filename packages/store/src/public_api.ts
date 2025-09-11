@@ -2,6 +2,7 @@ export { NgxsModule } from './module';
 export { Action } from './decorators/action';
 export { Store } from './store';
 export { State } from './decorators/state';
+export { Select } from './decorators/select/select';
 export { SelectorOptions } from './decorators/selector-options';
 export { Actions, type ActionContext, ActionStatus } from './actions-stream';
 
@@ -40,6 +41,8 @@ export {
   withNgxsDevelopmentOptions
 } from './dev-features/ngxs-development.module';
 export { NgxsUnhandledActionsLogger } from './dev-features/ngxs-unhandled-actions-logger';
+
+export { withNgxsNoopExecutionStrategy } from './execution/noop-execution-strategy';
 
 export {
   createModelSelector,
